@@ -1,0 +1,10 @@
+language: go
+go:
+  - 1.11.x
+sudo: required
+
+before_install:
+  - sudo chown -R travis /tmp
+script:
+  - make
+  - make test
